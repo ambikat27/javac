@@ -5,9 +5,7 @@ class Carrom {
 		int size;
         double cost;
         String shape;
-		
-
-        Carrom() {
+	Carrom() {
             
 			this("Cream","Wood",19,600,"square");
 			System.out.println("Carrom is Created");
@@ -20,7 +18,7 @@ class Carrom {
         }
         Carrom(String color, String type) {
 
-            this.color = color;
+            this(color);
             this.type = type;
             System.out.println("Carrom color" + color);
             System.out.println("Carrom type:" + type);
@@ -28,8 +26,7 @@ class Carrom {
         Carrom(String color, String type, int size){
 
 
-            this.color = color;
-            this.type = type;
+            this(color,type);
             this.size = size;
             System.out.println("Carrom color" + color);
 			System.out.println("Carrom type" + type);
@@ -37,9 +34,7 @@ class Carrom {
         }
         Carrom(String color, String type, int size,double cost){
 
-            this.color = color;
-            this.type = type;
-            this.size = size;
+             this(color,type,size);
             this.cost = cost;
             System.out.println("Carrom color" + color);
 			System.out.println("Carrom type" + type);
@@ -49,10 +44,7 @@ class Carrom {
         }
         Carrom(String color, String type, int size,double cost, String shape){
 
-            this.color = color;
-            this.type = type;
-            this.size = size;
-            this.cost = cost;
+            this(color,type,size,cost);
             this.shape = shape;
 			
 			System.out.println("Carrom color" + color);

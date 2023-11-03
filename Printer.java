@@ -9,9 +9,7 @@ class Printer{
 	Printer(){
 		this("cannon","inkjet",100,3000,"2");
 	
-		
-		
-		System.out.println("Printer is Created........");
+	System.out.println("Printer is Created........");
 	}
 	Printer(String brand){
 	
@@ -21,7 +19,7 @@ class Printer{
 	}
 	Printer(String brand,String type){
 	
-		this.brand=brand;
+		this(brand);
 		this.type=type;
 		System.out.println("Printer brand:"+brand);
 		System.out.println("Printer type:"+type);
@@ -29,8 +27,7 @@ class Printer{
 	Printer(String brand,String type,double noOfPages){
 	
 	
-		this.brand=brand;
-		this.type=type;
+		this(brand,type);
 		this.noOfPages=noOfPages;
 		System.out.println("Printer brand:"+brand);
 		System.out.println("Printer type:"+type);
@@ -39,8 +36,7 @@ class Printer{
 	Printer(String brand,String type,double noOfPages,double cost){
 	
 	
-		this.brand=brand;
-		this.type=type;
+		this(brand,type,noOfPages);
 		this.noOfPages=noOfPages;
 		this.cost=cost;
 		System.out.println("Printer brand:"+brand);
@@ -52,9 +48,7 @@ class Printer{
 	Printer(String brand,String type,double noOfPages,double cost,String warranty){
 	
 		
-		this.brand=brand;
-		this.type=type;
-		this.noOfPages=noOfPages;
+		this(brand,type,noOfPages,cost);
 		this.cost=cost;
 		this.warranty=warranty;
 		System.out.println("Printer brand:"+brand);

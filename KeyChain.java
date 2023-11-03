@@ -21,7 +21,7 @@ class KeyChain{
 	}
 	KeyChain(String brand,String type){
 	
-		this.brand=brand;
+		this(brand);
 		this.type=type;
 		System.out.println("KeyChain brand:"+brand);
 		System.out.println("KeyChain type:"+type);
@@ -29,8 +29,7 @@ class KeyChain{
 	KeyChain(String brand,String type,String design){
 	
 	
-		this.brand=brand;
-		this.type=type;
+		this(brand,type);
 		this.design=design;
 		System.out.println("KeyChain brand:"+brand);
 		System.out.println("KeyChain type:"+type);
@@ -39,9 +38,7 @@ class KeyChain{
 	KeyChain(String brand,String type,String design,double cost){
 	
 	
-		this.brand=brand;
-		this.type=type;
-		this.design=design;
+		this(brand,type,design);
 		this.cost=cost;
 		System.out.println("KeyChain brand:"+brand);
 		System.out.println("KeyChain type:"+type);
@@ -52,10 +49,7 @@ class KeyChain{
 	KeyChain(String brand,String type,String design,double cost,String size){
 	
 		
-		this.brand=brand;
-		this.type=type;
-		this.design=design;
-		this.cost=cost;
+		this(brand,type,design,cost);
 		this.size=size;
 		System.out.println("KeyChain brand:"+brand);
 		System.out.println("KeyChain type:"+type);

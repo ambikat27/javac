@@ -20,7 +20,7 @@ class Bracelet {
         }
         Bracelet(String metal, String type) {
 
-            this.metal = metal;
+            this(metal);
             this.type = type;
             System.out.println("Bracelet metal" + metal);
             System.out.println("Bracelet type:" + type);
@@ -28,8 +28,7 @@ class Bracelet {
         Bracelet(String metal, String type, double weight){
 
 
-            this.metal = metal;
-            this.type = type;
+            this(metal,type);
             this.weight = weight;
             System.out.println("Bracelet metal" + metal);
 			System.out.println("Bracelet type" + type);
@@ -37,9 +36,7 @@ class Bracelet {
         }
         Bracelet(String metal, String type, double weight,double cost){
 
-            this.metal = metal;
-            this.type = type;
-            this.weight = weight;
+            this(metal,type,weight);
             this.cost = cost;
             System.out.println("Bracelet metal" + metal);
 			System.out.println("Bracelet type" + type);
@@ -49,10 +46,7 @@ class Bracelet {
         }
         Bracelet(String metal, String type, double weight,double cost, double length){
 
-            this.metal = metal;
-            this.type = type;
-            this.weight = weight;
-            this.cost = cost;
+            this(metal,type,weight,cost);
             this.length = length;
 			
 			System.out.println("Bracelet metal" + metal);
