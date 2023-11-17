@@ -33,9 +33,9 @@ void show()
 	System.out.println("name is:"+this.name);
 	System.out.println("type is;"+this.type);
 	System.out.println("brand is:"+this.brand);
-	if(brand!=null)
+	if(this.brand!=null)
 	{
-		brand.show();
+		this.brand.show();
 	}
 	System.out.println("ending in hardware");
 	
